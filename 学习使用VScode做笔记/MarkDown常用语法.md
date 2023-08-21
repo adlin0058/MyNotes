@@ -48,9 +48,9 @@
 
 代码块语法:
 
-''' python
+``` python
 print("Hello, World!")
-'''
+```
 
 请将 ' 替换成 `.
 
