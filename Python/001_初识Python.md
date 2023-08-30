@@ -51,3 +51,24 @@ line2
 line3''')
 ```
 
+### 格式化
+```py
+print('Hello , %s' % 'world')
+print('I have %d apple' % 12)
+print('PI = %.2f' % 3.1415926)
+# 转义 %%表示一个%
+print('growth rate: %d %%' % 70)
+# f-string
+r = 3.5
+s = 3.14 * r**2
+print(f'The area of a circle with radius {r} is {s:.2f}')
+
+# 格式化练习 小明的成绩从去年的72分提升到了今年的85分，
+# 请计算小明成绩提升的百分点，并用字符串格式化显示出'xx.x%'，
+# 只保留小数点后1位：
+score_lastyear = 72
+score_thisyear = 85
+promotion = 100 * (score_thisyear - score_lastyear) / score_lastyear
+print(f'Ming\'s promotion is {promotion:.1f}%')
+print('Ming\'s promotion is %.1f%%' % promotion)
+```
