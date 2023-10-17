@@ -27,11 +27,20 @@ gcov test.cpp
 ```sh
 lcov -c -d . -o test.info --rc lcov_branch_coverage=1
 ```
+#### lcov常用命令
+```sh
+lcov -b < 测试代码路径 > -d < gcda目录位置 > -c -o result.info --rc lcov_branch_coverage=1
+```
+- `-b`是指定原代码路径，即生成gcno数据时编译的代码路径
+- `-d`为gcda所在目录，可将所有gcda文件放在同一目录
+- `-c`代表生成覆盖率数据
+- `-o`代表生成的文件名
 
 ### 去除不需要的文件
 ```sh
 lcov --remove ./test.info '/usr/*' -o ./test.info
 ```
+
 
 ### 生成html格式的覆盖率报告
 ```sh
