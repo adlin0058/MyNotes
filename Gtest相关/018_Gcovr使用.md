@@ -6,9 +6,9 @@ g++ test.cpp -o test -lgtest -lpthread --coverage
 ```
 
 ![Alt text](image.png)
-`test.cpp`是待测试文件
-`test`是生成的可执行文件
-`test.gcno`是gcovr生成的文件
+- `test.cpp`是待测试文件
+- `test`是生成的可执行文件
+- `test.gcno`是gcovr生成的文件
 
 ### 运行可执行文件
 ```sh
